@@ -1,5 +1,13 @@
 @import url('https://rsms.me/inter/inter.css');
 @import url('http://fonts.cdnfonts.com/css/cocogoose');
+:root {
+  /* primary colors */
+--black: #272831;
+--white: #fff;
+--orange: #ec5242;
+--gray: #d3d3d3;
+}
+
 *,
 ::before,
 ::after {
@@ -9,8 +17,8 @@
 }
 
 body {
-  width: 100%;
-  height: 4000px;
+  width: 98%;
+  height: fit-content;
   font-family: 'COCOGOOSE', sans-serif;
 }
 
@@ -28,7 +36,6 @@ li :hover {
 header {
   width: 100%;
   height: 100px;
-  background-color: brown;
   position: fixed;
 }
 
@@ -36,7 +43,7 @@ header {
   overflow: hidden; 
   width: 100%;
   height: 37%;
-  background: #565454;
+  background: #4b4a4a;
 }
 .bar-menu {
   display: block;
@@ -51,37 +58,48 @@ header {
   box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
 }
 
+.header-links.active {
+  height: 600px;
+  background: #4b4a4a;
+  z-index: 1;
+  width: 95%;
+}
+
+.header.active {
+  height: 100%;
+}
+
 .bar-menu.active {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  flex-direction: row;
+  width: 95%;
   left: 0;
-  color: #d3d3d3;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 44px;
-  background: #565454;
+  color: #fdf9f9;
+  background: #4b4a4a;
+  line-height: 32px;
   min-height: 350px;
-  z-index: 1;
-  margin-top: -37px;
+  margin-top: -43px;
   text-align: center;
-  align-items: center;
+  align-items: flex-end;
 }
 .menu-list.active {
   display: flex;
   flex-direction: column;
+  width: 98%;
   justify-content: flex-start;
-  left: 0;
-  color:  #565454;
+  left: 10px;
+  line-height: 32px;
+  min-height: 150px;
+  margin-top: -30px;
+  text-align: left;
   font-size: 16px;
-  font-weight: 600;
-  line-height: 44px;
-  background: #d3d3d3;
-  min-height: 350px;
-  z-index: 1;
-  margin-top: -10px;
-  text-align: center;
-  align-items: center;
+}
+
+.menu-list.active a {
+  font-family: 'COCOGOOSE', serif;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
 }
 .main-container.active,
 .menu-nav.active  {
@@ -91,7 +109,7 @@ header {
 .bar-item a {
   float: right;
   display: block;
-  color: #f2f2f2;
+  color: #ffffff;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -109,6 +127,12 @@ header {
   margin-left: 10%;
 }
 
+.logo-image {
+  display: none;
+  width: 100px;
+  height: 40px;
+}
+
 .menu-list {
   display: block;
   position: absolute;
@@ -120,12 +144,6 @@ header {
   border-radius: 10px;
   transition: 0.3s;
   box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-}
-
-.hamburger {
-  display: block;
-  cursor: pointer;
-  float: left;
 }
 
 .bar {
@@ -140,10 +158,12 @@ header {
 
 .hamburger.active .bar:nth-child(2) {
   opacity: 0;
+  color: black;
 }
 
 .hamburger.active .bar:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
+  color: black;
 }
 
 .hamburger.active .bar:nth-child(3) {
@@ -196,12 +216,16 @@ header {
   gap: 10px;
   height: fit-content;
   width: 100%;
-  background: #d3d3d3;
+  background: url('images/header1.png');
 }
 
 .bar-icon {
   width: 40px;
   height: 30px;
+}
+
+.header-links.active .fa {
+  color: #ffffff;
 }
 
 .fa {
@@ -242,6 +266,10 @@ header {
   margin-top: 2px;
   font-family: 'COCOGOOSE', sans-serif;
   text-align: center;
+  background-image: url('images/text-background1.jpg');
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .headline-detail {
@@ -270,7 +298,8 @@ header {
   display: flex;
   flex-direction: column;
   width: 100%;
-  background: url('images/background-image.png');
+  background: url('images/Partners.jpg');
+  background-size: cover;
   align-items: center;
 }
 
@@ -304,6 +333,10 @@ header {
   margin: 15px 5px;
   gap: 5px;
   color: #d2d2d2;
+}
+
+.main-program :hover {
+  border: 1px solid white;
 }
 
 .program-name {
@@ -393,6 +426,13 @@ header {
   height: 200px;
   margin-top: 50px;
   gap: 20px;
+}
+
+.instructor-card3.active,
+.instructor-card4.active,
+.instructor-card5.active,
+.instructor-card6.active {
+  display: flex;
 }
 
 
@@ -495,6 +535,32 @@ header {
   color: #ec5242;
 }
 
+.partner-section {
+  display: none;
+}
+
+.foot-note {
+  display: none;
+}
+
+.btn {
+  display: block;
+  width: 80%;
+  padding: 15px;
+  cursor: pointer;
+  border: 1px solid var(--gray);
+  font-weight: bold;
+}
+
+
+.btn span i {
+  font-size: 20px;
+  position: relative;
+  top: 2px;
+  padding: 5px;
+  color: var(--orange);
+}
+
 @media only screen and (min-width: 768px) {
   body {
     width: 100%;
@@ -505,6 +571,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    background: #565353;
   }
 
   .bar-menu {
@@ -559,7 +626,11 @@ header {
   .logo {
     display: block;
     left: 10px;
-    margin-top: 10px;
+    margin-top: 0;
+  }
+
+  .logo-image {
+    display: block;
   }
 
   .bar-item :hover {
@@ -592,10 +663,10 @@ header {
   }
 
   .headline {
-    width: 600px;
-    margin-left: 10px;
+    width: 700px;
     align-items: flex-start;
-    margin-left: 120px;
+    margin-left: 150px;
+    margin-top: 160px;
   }
 
   .headline-title {
@@ -605,6 +676,7 @@ header {
 
   .headline-detail {
     text-align: left;
+    background-color: white;
   }
 
   .cc {
@@ -708,13 +780,17 @@ header {
     display: none;
   }
 
+  .btn {
+    display: none;
+  }
+
   .partner-section {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 90px;
     background: #1c1c1c;
-    margin-top: 800px;
+    margin-top: 830px;
   }
 
   .footer-title {
