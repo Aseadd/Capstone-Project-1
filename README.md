@@ -1,4 +1,4 @@
-# CApstoneProject-1
+# CapstoneProject-1
 
 ## Description
 
