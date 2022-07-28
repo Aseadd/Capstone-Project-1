@@ -1,4 +1,4 @@
-# Microverse-Project-1
+# CApstoneProject-1
 
 ## Description
 
@@ -6,11 +6,11 @@ This website is my personal portoflio. I have developed number of websites and t
 
 ## Built With
 
-- HTML
+- HTML, CSS and JAvaScript
 
 ## Live Demo
 
-[Live Demo Link](https://aseadd.github.io)
+[Live Demo Link]()
 
 ## Getting Started
 
