@@ -1,5 +1,7 @@
 # Capstone Project-1
 
+![Microverse](https://img.shields.io/badge/Microverse-blueviolet) ![HTML](https://img.shields.io/badge/-HTML-orange) ![CSS](https://img.shields.io/badge/-CSS-blue) ![JavaScript](https://img.shields.io/badge/-JavaScript-yellow) 
+
 ## Description
 
 This website is my personal portoflio. I have developed number of websites and the projects and my achievents are available here
@@ -74,4 +76,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT] (/MIT.md) licensed.
+- This project is [MIT](./LICENSE) licensed.
