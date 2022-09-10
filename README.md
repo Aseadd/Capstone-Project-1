@@ -1,4 +1,4 @@
-# CapstoneProject-1
+# Capstone Project-1
 
 ## Description
 
@@ -30,12 +30,28 @@ Make sure NodeJs and NPM are installed
 
 ### Setup
 
-1.  Clone the repo into your local machine
-    `git clone https://github.com/Aseadd/Microverse-Project-1
-2.  open terminal and cd in the project
-    `cd Microverse-Project-1
-3.  Open the index html in your browser
-    `open index.html
+### Setup
+
+- Open the terminal on your computer
+- Navigate through directories using [change directory (cd)](https://www.howtogeek.com/659411/how-to-change-directories-in-command-prompt-on-windows-10) command to where you want to clone the repository.
+- Type the following command then press ENTER:
+
+```sh
+  git clone https://github.com/Aseadd_/Microverse-Project-1.git
+```
+
+- The terminal will send to you information about your download.
+- Type the following command then press ENTER:
+
+```sh
+  cd Microverse-Project-1
+```
+
+- **Open folder in VSC**
+
+```sh
+  code .
+```
 
 ## Authors
 
@@ -55,11 +71,6 @@ Feel free to check the [issues page](../../issues/).
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
 
 ## 📝 License
 
